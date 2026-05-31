@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 1rem;
+}
+header {
+  background-color: #34495e;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 300px;
+  margin: 0 auto;
+}
+input, select, button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.sos-btn {
+  background-color: #e74c3c;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 100%;
+}
+.stop-btn {
+  background-color: #95a5a6;
+  margin-top: 1rem;
+  width: 100%;
+}
+.dashboard {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+.status-controls select {
+  width: 100%;
+}
+.map-placeholder {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f1f2f6;
+  text-align: center;
+  border-radius: 4px;
+}
