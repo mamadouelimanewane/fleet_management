@@ -5,6 +5,9 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build-android:
     runs-on: ubuntu-latest
@@ -28,9 +31,11 @@ jobs:
       working-directory: ./driver-app
       run: npm run build
 
-    - name: Sync Capacitor
+    - name: Add and Sync Capacitor Android
       working-directory: ./driver-app
-      run: npx cap sync android
+      run: |
+        npx cap add android
+        npx cap sync android
 
     - name: Setup Java
       uses: actions/setup-java@v4
