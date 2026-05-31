@@ -1,0 +1,6 @@
+{
+  "appId": "com.fleetmanagement.driver",
+  "appName": "Fleet Driver",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
