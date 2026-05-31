@@ -31,11 +31,9 @@ jobs:
       working-directory: ./driver-app
       run: npm run build
 
-    - name: Add and Sync Capacitor Android
+    - name: Sync Capacitor Android
       working-directory: ./driver-app
-      run: |
-        npx cap add android
-        npx cap sync android
+      run: npx cap sync android
 
     - name: Setup Java
       uses: actions/setup-java@v4
